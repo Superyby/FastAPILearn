@@ -17,6 +17,7 @@ class CommonQueryParmas:
         return query_params
 
 
+
 @app.get("/books")
 async def get_books(params=Depends(CommonQueryParmas), skip=100):
     print(params.q)
